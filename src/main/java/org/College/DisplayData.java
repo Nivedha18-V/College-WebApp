@@ -3,9 +3,6 @@ package org.College;
 
 import java.io.Serializable;
 
-/**
- * Servlet implementation class DisplayData
- */
 public class DisplayData implements Serializable{
 	private static final long serialVersionUID = 1L;
 	private String stname,rollno,course,fees;
@@ -40,12 +37,8 @@ public class DisplayData implements Serializable{
 	public void setFees(String fees)
 	{
 		this.fees=fees;
-	}
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public DisplayData() {
+	}       
+       public DisplayData() {
         super();
         // TODO Auto-generated constructor stub
     }
