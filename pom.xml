@@ -43,7 +43,7 @@
          <version>2.1</version>
          <scope>provided</scope>
   </dependency>
- </dependencies>
+   </dependencies>
      
 <profiles>
    <profile>
@@ -51,14 +51,14 @@
    <build>
     <finalName>College</finalName>
     <plugins>
-      
+     <!--  
     <plugin>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-javadoc-plugin</artifactId>
       <configuration>
         <additionalparam>-Xdoclint:none</additionalparam>
       </configuration>
-    </plugin>
+    </plugin>-->
 
     <plugin>
        <groupId>org.apache.tomcat.maven</groupId>
@@ -88,7 +88,7 @@
         </configuration>
   </plugin>
   
-  <!-- <plugin>
+ <!--  <plugin>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-compiler-plugin</artifactId>
       <version>3.3</version>
