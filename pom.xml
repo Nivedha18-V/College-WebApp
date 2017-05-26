@@ -3,7 +3,7 @@
   <groupId>Org.College</groupId>
   <artifactId>College</artifactId>
   <packaging>war</packaging>
-  <version>0.0.13</version>
+  <version>0.0.14-SNAPSHOT</version>
   <name>College Maven Webapp</name>
   <url>http://maven.apache.org</url>
    
