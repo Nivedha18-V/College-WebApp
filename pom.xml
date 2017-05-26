@@ -3,14 +3,14 @@
   <groupId>Org.College</groupId>
   <artifactId>College</artifactId>
   <packaging>war</packaging>
-  <version>0.0.13-SNAPSHOT</version>
+  <version>0.0.13</version>
   <name>College Maven Webapp</name>
   <url>http://maven.apache.org</url>
    
   <scm>
      <connection>scm:git:https://github.com/Nivedha18-V/College-WebApp.git</connection>
      <url>scm:git:https://github.com/Nivedha18-V/College-WebApp.git</url>
-    <tag>College-0.0.1</tag>
+    <tag>College-0.0.13</tag>
   </scm>
   
   <distributionManagement>
