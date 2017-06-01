@@ -5,7 +5,8 @@ import java.io.Serializable;
 
 public class DisplayData implements Serializable{
 	private static final long serialVersionUID = 1L;
-	private String stname,rollno,course,fees;
+	public String stname,course;
+	public int roll,fees;
 	public String getName()
 	{
 		return stname;
@@ -14,13 +15,14 @@ public class DisplayData implements Serializable{
 	{
 		this.stname=stname;
 	}
-	public String getRollno()
+	public int getRollno()
 	{
-		return rollno;
+		return roll;
 	}
-	public void setRollno(String rollno)
+	public int setRollno(int roll)
 	{
-		this.rollno=rollno;
+		this.roll=roll;
+		return roll;
 	}
 	public String getCourse()
 	{
@@ -30,13 +32,14 @@ public class DisplayData implements Serializable{
 	{
 		this.course=course;
 	}
-	public String getFees()
+	public int getFees()
 	{
 		return fees;
 	}
-	public void setFees(String fees)
+	public int setFees(int fees)
 	{
 		this.fees=fees;
+		return fees;
 	}       
        public DisplayData() {
         super();

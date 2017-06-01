@@ -2,6 +2,8 @@ package org.College;
 
 
 import java.io.IOException;
+import java.lang.Integer;
+
 import javax.servlet.ServletException;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.http.HttpServlet;
@@ -37,17 +39,15 @@ public class Admission extends HttpServlet {
 		// TODO Auto-generated method stub
 		System.out.println("Insertion started-------!!");
 		String stname=request.getParameter("stname");
-		String rollno=request.getParameter("roll");
+	    int roll=Integer.parseInt(request.getParameter("roll"));
 		String course=request.getParameter("course");
-		String fees=request.getParameter("fees");
-		
+		int fees=Integer.parseInt(request.getParameter("fees"));
 		DisplayData disp=new DisplayData();
 		disp.setName(stname);
-		disp.setRollno(rollno);
+		disp.setRollno(roll);
 		disp.setCourse(course);
 		disp.setFees(fees);
 		RequestDispatcher req = request.getRequestDispatcher("/Welcome.jsp");
-		
 		request.setAttribute("display", disp);
 		req.forward(request, response);
 	}
