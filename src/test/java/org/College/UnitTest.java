@@ -56,7 +56,7 @@ public class UnitTest {
 		}
 		@Test
 		public void testfees() {
-			obj.fees=0;
+			obj.fees=50000;
 			if(obj.fees != 0)
 			{
 				System.out.println(obj.fees);
