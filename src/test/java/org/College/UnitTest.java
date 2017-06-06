@@ -12,7 +12,7 @@ public class UnitTest {
 	@Test
 	public void test() {
 		
-		obj.roll=120938;
+		obj.roll=12345;
 	    /*obj.getRollno();
 		obj.getName();
 		obj.getCourse();
