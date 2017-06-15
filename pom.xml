@@ -3,7 +3,7 @@
   <groupId>Org.College</groupId>
   <artifactId>College</artifactId>
   <packaging>war</packaging>
-  <version>0.0.18-SNAPSHOT</version>
+  <version>0.0.19-SNAPSHOT</version>
   <name>College Maven Webapp</name>
   <url>http://maven.apache.org</url>
    
@@ -13,49 +13,37 @@
     <tag>College-0.0.15</tag>
   </scm>
   
-  <distributionManagement>
-  <snapshotRepository>
-    <id>nexus</id>
-    <url>http://182.19.39.173:8081/nexus/content/repositories/snapshots</url>
-    </snapshotRepository> 
-    <repository>
-        <id>MavenRelease</id>
-        <url>https://github.com/Nivedha18-V/College-WebApp.git</url>
-     </repository>
-  </distributionManagement>
-
-<dependencies>
-  <dependency>
+   <distributionManagement>
+   <repository>
+      <id>releases</id>
+      <name>Releases</name>
+      <url>http://localhost:8081/nexus/content/repositories/releases/</url>
+   </repository>
+   <snapshotRepository>
+    <id>snapshots</id>
+    <name>Snapshots</name>
+    <url>http://localhost:8081/nexus/content/repositories/snapshots/</url>
+    </snapshotRepository>
+	     </distributionManagement> 
+  <dependencies>
+    <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.8.2</version>
+      <version>3.8.1</version>
       <scope>test</scope>
-  </dependency>
+    </dependency>
   <dependency>
         <groupId>javax.servlet</groupId>
-        <artifactId>javax.servlet-api</artifactId>
-        <version>3.1.0</version>
-        <scope>provided</scope>
-  </dependency>
-  <dependency>
-         <groupId>javax.servlet.jsp</groupId>
-         <artifactId>jsp-api</artifactId>
-         <version>2.1</version>
-         <scope>provided</scope>
-  </dependency>
-  
- <!--  <dependency>
-        <groupId>org.seleniumhq.selenium</groupId>
-        <artifactId>selenium-java</artifactId>
-        <version>2.53.1</version>
-    </dependency>  
-    
- <dependency>
-    <groupId>org.testng</groupId>
-    <artifactId>testng</artifactId>
-    <version>6.9.10</version>
- </dependency>   -->
-  
+    <artifactId>javax.servlet-api</artifactId>
+    <version>3.1.0</version>
+    <scope>provided</scope>
+    </dependency>
+     <dependency>
+    <groupId>javax.servlet.jsp</groupId>
+    <artifactId>jsp-api</artifactId>
+    <version>2.1</version>
+    <scope>provided</scope>
+    </dependency>
    </dependencies>
      
 <profiles>
@@ -100,8 +88,6 @@
         <nexusUrl>http://localhost:8081/nexus/</nexusUrl>
         </configuration>
   </plugin>
-  
-
   
  <!--  <plugin>
       <groupId>org.apache.maven.plugins</groupId>
