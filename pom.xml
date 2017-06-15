@@ -3,7 +3,7 @@
   <groupId>Org.College</groupId>
   <artifactId>College</artifactId>
   <packaging>war</packaging>
-  <version>0.0.16-SNAPSHOT</version>
+  <version>0.0.18-SNAPSHOT</version>
   <name>College Maven Webapp</name>
   <url>http://maven.apache.org</url>
    
@@ -16,14 +16,14 @@
   <distributionManagement>
   <snapshotRepository>
     <id>nexus</id>
-    <url>http://localhost:8081/nexus/content/repositories/snapshots</url>
+    <url>http://182.19.39.173:8081/nexus/content/repositories/snapshots</url>
     </snapshotRepository> 
     <repository>
         <id>MavenRelease</id>
         <url>https://github.com/Nivedha18-V/College-WebApp.git</url>
      </repository>
-   </distributionManagement>
-  
+  </distributionManagement>
+
 <dependencies>
   <dependency>
       <groupId>junit</groupId>
@@ -43,7 +43,6 @@
          <version>2.1</version>
          <scope>provided</scope>
   </dependency>
-  
   
  <!--  <dependency>
         <groupId>org.seleniumhq.selenium</groupId>
@@ -102,29 +101,7 @@
         </configuration>
   </plugin>
   
- <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-assembly-plugin</artifactId>
-            <version>2.2-beta-5</version>
-         <executions>
-         <execution>
-              <id>Create-zip</id>
-              <phase>package</phase>
-            <goals>
-               <goal>single</goal>
-            </goals>
-        <configuration>
-        <descriptors>
-            <descriptor>distribution</descriptor>
-          </descriptors>
-         <!--  <archive>
-          <manifest>
-          <mainclass>org.College.DisplayData</mainclass></manifest>
-          </archive> -->
-        </configuration>
-     </execution>
-     </executions>
-  </plugin>
+
   
  <!--  <plugin>
       <groupId>org.apache.maven.plugins</groupId>
@@ -136,17 +113,6 @@
          </configuration>
    </plugin>-->
    
- <!-- <plugin>
-         <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-surefire-plugin</artifactId>
-          <version>2.14.1</version>
-             <configuration>
-                 <properties>
-                 <property>
-                 <name>UnitTest</name>
-                 <value>org.College.UnitTest</value></property></properties>
-              </configuration>
-  </plugin> -->
     
 </plugins>
 </build> 
